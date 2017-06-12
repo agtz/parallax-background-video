@@ -1,2 +1,2 @@
 # parallax-background-video
-http://agtz.github.io
+https://agtz.github.io/parallax-background-video/
