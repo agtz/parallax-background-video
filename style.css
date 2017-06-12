@@ -1,0 +1,56 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 10px 5%;
+}
+video {
+    /*The z-index property specifies the stack order of an element.
+    An element with greater stack order is always in front of an element
+    with a lower stack order. Note: z-index only works on positioned elements
+    (position:absolute, position:relative, or position:fixed).*/
+    z-index: -9999;
+    position: fixed; /*The element is positioned relative to the browser window*/
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+.slide {
+    box-sizing: border-box;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    box-shadow: inset 0 10px 10px rgba(0,0,0,.3);
+}
+
+.slide:nth-child(even) {/*selects every .slide element that is an even-numbered child of its parent*/
+    /*scroll:	The background scrolls along with the element. This is default*/
+    background-attachment: fixed; /*The background is fixed with regard to the viewport*/
+}
+#slide1{
+  background-image:url(ubw.jpg);
+}
+#slide2{
+  background-image:url(attack.jpg);
+}
+#slide3{
+  background-image:url(guardian.jpg);
+}
+#slide4{
+  background-image:url(goodbye.png);
+}
+#slide5{
+  background-image:url(archer.jpg);
+}
+#slide6{
+  background-image:url(transparent.png);
+}
